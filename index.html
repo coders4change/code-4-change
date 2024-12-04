@@ -1,0 +1,138 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code 4 Change</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="menubar">
+      <ul
+        style="
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          width: 95%;
+        "
+      >
+        <div id="pages" style="display: flex">
+          <li>
+            <p><a href="index.html">Home</a></p>
+          </li>
+          <li>
+            <p><a href="blog.html">Blog</a></p>
+          </li>
+          <li>
+            <p><a href="about.html">About</a></p>
+          </li>
+        </div>
+        <li>
+          <p>
+            Contact us at:
+            <a href="mailto:codeforchange70@gmail.com"
+              >codeforchange70@gmail.com</a
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div id="header">
+      <div style="padding: 75px">
+        <h1>Code 4 Change</h1>
+      </div>
+    </div>
+    <div id="main-body">
+      <div id="introduction">
+        <div style="padding: 24px">
+          <h1>Welcome!</h1>
+          <h2>How can we help you today</h2>
+        </div>
+        <div id="services">
+          <div class="dropdown">
+            <button class="drop-btn">Example Service</button>
+            <div class="drop-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati molestiae quae harum voluptatum rem quis qui ab
+                repellat, officiis laborum quod inventore ut non placeat totam
+                quaerat quos tempore similique.
+              </p>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="drop-btn">Example Service</button>
+            <div class="drop-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati molestiae quae harum voluptatum rem quis qui ab
+                repellat, officiis laborum quod inventore ut non placeat totam
+                quaerat quos tempore similique.
+              </p>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="drop-btn">Example Service</button>
+            <div class="drop-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati molestiae quae harum voluptatum rem quis qui ab
+                repellat, officiis laborum quod inventore ut non placeat totam
+                quaerat quos tempore similique.
+              </p>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="drop-btn">Example Service</button>
+            <div class="drop-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati molestiae quae harum voluptatum rem quis qui ab
+                repellat, officiis laborum quod inventore ut non placeat totam
+                quaerat quos tempore similique.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h1 style="padding-left: 24px; margin: 0;">Our Projects</h1>
+        <div id="projects" style="display: flex; flex-direction: row;">
+          <div class="project-example" style="width: 300px; border: 1px solid black; border-radius: 10px; padding: 10px; margin: 10px;">
+            <img src="images/image.png" width="300px"/>
+            <h3>Rachels Mandala Art Catalogue</h3>
+            <p><a href="https://caitlynp123.github.io/cas-rachel-mandala-art">Check it out here!</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" style="display: flex; flex-direction: row; justify-content: center;">
+        <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+            <h2 style="color: white; text-align: center;">Contact us at</h2>
+            <h4 style="text-align: center; margin: 0%;"><a href="mailto:codeforchange70@gmail.com"
+              >codeforchange70@gmail.com</a
+            ></h4> 
+
+        </div>    
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButtons = document.querySelectorAll(".drop-btn");
+        const dropdownContents = document.querySelectorAll(".drop-content");
+
+        dropdownButtons.forEach((button, index) => {
+          button.addEventListener("click", function () {
+            const content = dropdownContents[index];
+
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
